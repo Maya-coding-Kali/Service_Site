@@ -4,72 +4,218 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Single Page Beginning</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/a96df777ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Service Site</title>
   </head>
+
   <body>
     <header>
-      <a href="./contact.html">Contact Us</a>
-      <a href="./price.html">Price</a>
-      <h1>My Service Based Website</h1>
-      <!-- Header -->
-      <img src="./Img/water-1761027.jpg" width="100%" alt="water-main" />
+      <div class="header-logo">
+        <a href="./index.html">
+          <img class="logo" src="./Img/Logo.png" alt="" />
+          <h1 class="header-title">Home Pro</h1>
+        </a>
+      </div>
+      <nav>
+        <i class="fa-solid fa-bars fa-bar-color"></i>
+        <div class="nav-items">
+          <a class="green-under-line-1" href="./contact.html"
+            >Contact Us <span> &#x25BC;</span>
+          </a>
+        </div>
+        <div class="nav-items">
+          <a class="green-under-line-2" href="./price.html"
+            >Products <span> &#x25BC;</span></a
+          >
+        </div>
+        <div class="nav-items">
+          <a class="green-under-line-3" href="./price.html"
+            >About <span> &#x25BC;</span></a
+          >
+        </div>
+        <div class="nav-items">
+          <a class="green-under-line-4" href="./price.html"
+            >Careers <span> &#x25BC;</span></a
+          >
+        </div>
+      </nav>
     </header>
     <main>
-      <h2>Take A break, A Clean Break</h2>
-      <button>Get A Quote</button>
-      <p>
-        <strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing
-        elit. Ipsa amet dolore totam ad fugit non aut delectus culpa iusto?
-        Molestiae itaque quae dolorum veniam deserunt consequatur, adipisci
-        possimus ad eaque!
-      </p>
-      <h3>Our Products</h3>
-      <a href="https://www.apple.com/ca" target="_blank"
-        ><img src="./Img/panda-g8a1a0410f_1920.jpg" width="33%" alt="panda"
-      /></a>
-      <a href="https://www.apple.com/ca" target="_blank"
-        ><img src="./Img/panda-g8a1a0410f_1920.jpg" width="33%" alt="panda"
-      /></a>
-      <a href="https://www.apple.com/ca" target="_blank"
-        ><img src="./Img/panda-g8a1a0410f_1920.jpg" width="33%" alt="panda"
-      /></a>
+      <section>
+        <div class="main-image">
+          <div class="overlay">
+            <div>
+              <h2 class="text-animation">
+                Take A Break,<br />
+                A Clean Break
+              </h2>
+
+              <a class="button button-animation" href="#products"
+                >Find A Service</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="what-we-do">
+        <div class="main-information">
+          <h3>When it comes to getting things done, we do it!!</h3>
+          <p>
+            <strong>Lorem</strong> ipsum dolor sit amet consectetur adipisicing
+            elit. Ipsa amet dolore totam ad fugit non aut delectus culpa iusto?
+            Molestiae itaque quae dolorum veniam deserunt consequatur, adipisci
+            possimus ad eaque!ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsa amet dolore totam ad fugit non aut delectus culpa iusto?
+            Molestiae itaque quae dolorum veniam deserunt consequatur, adipisci
+            possimus ad eaque!ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsa amet dolore totam ad fugit non aut delectus culpa iusto?
+            Molestiae itaque quae dolorum veniam deserunt consequatur, adipisci
+            possimus ad eaque!
+          </p>
+        </div>
+        <h3 id="products">Our Products</h3>
+        <section class="product-items">
+          <figure class="product-1">
+            <div class="overlay">
+              <a class="button" href="#">Shop Now!</a>
+            </div>
+          </figure>
+          <figure class="product-2">
+            <div class="overlay">
+              <a class="button" href="#">Shop Now!</a>
+            </div>
+          </figure>
+          <figure class="product-3">
+            <div class="overlay">
+              <a class="button" href="#">Shop Now!</a>
+            </div>
+          </figure>
+        </section>
+      </section>
+      <article id="service">
+        <article id="service">
+          <h3>What Our Clients Say:</h3>
+          <section class="services">
+            <div class="slideShow">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero ipsam aliquam, quam excepturi laboriosam reiciendis
+                  tempore laudantium perspiciatis, laborum commodi, quisquam
+                  minus ullam? Dicta facere temporibus voluptatum quis quibusdam
+                  tempora.
+                </p>
+                <h4>-Steve From Vancouver</h4>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero ipsam aliquam, quam excepturi laboriosam reiciendis
+                  tempore laudantium perspiciatis, laborum commodi, quisquam
+                  minus ullam? Dicta facere temporibus voluptatum quis quibusdam
+                  tempora.
+                </p>
+                <h4>-Tom From Toronto</h4>
+              </div>
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Libero ipsam aliquam, quam excepturi laboriosam reiciendis
+                  tempore laudantium perspiciatis, laborum commodi, quisquam
+                  minus ullam? Dicta facere temporibus voluptatum quis quibusdam
+                  tempora.
+                </p>
+                <h4>-Jen From Winnipeg</h4>
+              </div>
+            </div>
+          </section>
+        </article>
+
+        <section class="media">
+          <h3>Get To Know Home Pro:</h3>
+          <video class="video-size" controls>
+            <source src="video/Aurora.mp4" type="" />
+          </video>
+        </section>
+      </article>
     </main>
-    <article>
-      <h3>Our Services</h3>
-      <ul>
-        <li>Exterior</li>
-        <li>Pressure Washing</li>
-        <li>Moss Removal</li>
-        <li>Gutters</li>
-        <li>Window Cleaning</li>
-      </ul>
-      <h3>Why We Are better</h3>
-      <ol>
-        <li>We are on time</li>
-        <li>We offer white glove service</li>
-        <li>Our customers are like family</li>
-      </ol>
-      <h3>Who we are</h3>
-      <video width="500px" controls>
-        <source src="video/Aurora.mp4" type="video/mp4" />     
-      </video>
-      
-      <h3>Who we are on youtube</h3>
-      <iframe
-        width="300"
-        height="315"
-        src="https://www.youtube.com/embed/66tfvFeALBQ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </article>
     <footer>
-      <p><a href="https://www.amazon.ca" target="_blank">Contact</a></p>
-      <p><a href="tel:555-555-5555">Phone</a></p>
-      <p><a href="mailto:fakename@gmail.com">Email</a></p>
+      <nav>
+        <div class="foot-contact">
+          <h5>Contact:</h5>
+          <p><a href="tel:555-555-5555">Phone</a></p>
+          <p><a href="mailto:fakename@gmail.com">Email</a></p>
+        </div>
+        <div>
+          <div class="foot-contact">
+            <h5>Products:</h5>
+            <p><a href="#">Little Bit of This</a></p>
+            <p><a href="#">Little Bit of That</a></p>
+            <p><a href="#">Some of The Other</a></p>
+          </div>
+        </div>
+        <div>
+          <div class="foot-contact">
+            <h5>Locations:</h5>
+            <p><a href="#">Here</a></p>
+            <p><a href="#">There</a></p>
+            <p><a href="#">Everywhere</a></p>
+          </div>
+        </div>
+      </nav>
+      <p>Copyright Pseudonym &#169;</p>
     </footer>
+    <script defer>
+      console.log(pageYOffset);
+      const slideShow = document.querySelectorAll(".slideShow > div");
+      const ShowLow = document.querySelector(".product-items");
+      const navDisplay = document.querySelector(".fa-bar-color");
+      let i = 0;
+      let opacityFade = 1;
+      let fadeInOut = true;
+      let happened = false;
+      console.log(window.innerWidth);
+      const ShowHideMenu = (event) => {
+        document.querySelectorAll(".nav-items").forEach((element) => {
+          // if (event.type === "scroll" && window.innerWidth < 760) {
+          //   element.style.display = "none";
+          //   return;
+          // }
+          // if (event.type === "click" && element.style.display !== "flex") {
+          //   element.style.display = "flex";
+          // }
+          // if (event.type === "click" && element.style.display === "flex") {
+          //   element.style.display = "none";
+          // }
+        });
+      };
+      document.addEventListener("scroll", ShowHideMenu);
+      let myClick = navDisplay.addEventListener("click", ShowHideMenu);
+      console.log();
+      document.addEventListener("scroll", (event) => {
+        if (window.scrollY > 750) {
+          ShowLow.style.display = "flex";
+          happened = true;
+        }
+      });
+
+      setInterval(() => {
+        if (opacityFade >= 1.4) {
+          slideShow[i].style.display = "none";
+          opacityFade = 0;
+          if (i === 2) {
+            i = -1;
+          }
+          fadeInOut = !fadeInOut;
+          slideShow[++i].style.display = "block";
+        }
+        slideShow[i].style.opacity = `${(opacityFade += 0.009)}`;
+      }, 35);
+    </script>
   </body>
 </html>
- nv
