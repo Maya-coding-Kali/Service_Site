@@ -411,6 +411,7 @@ figure > .overlay > a.button:active {
 }
 
 footer {
+  text-shadow: 2px 2px 3px #000;
   background: #0638bf;
 }
 
