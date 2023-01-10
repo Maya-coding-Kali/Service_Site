@@ -4,26 +4,142 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/style.css" />    
+    <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./CSS/style.css" />
     <title>Contact</title>
     <style>
+      body {
+        background-color: rgb(131, 131, 131);
+      }
+      .contact-us {
+        font-size: 2.5em;
+        text-shadow: 2px 2px 2px#000;
+      }
+      .service-selections {
+        text-align: left;
+      }
       .main-form {
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 5em;
-        background-color:lightskyblue ;
       }
       form {
-        border: 5px solid gray;
+        background-color: #0036ca;
+        border: 5px solid rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
         text-align: center;
         line-height: 2.5;
-        padding: 2em 3em;
-        box-shadow: 2px 2px 5px #555;
+        padding: 2em 4em;
+        box-shadow: 5px 5px 10px rgb(38, 38, 38), -5px 0px 10px rgb(38, 38, 38);
       }
-      input {
-        
+      fieldset {
+        padding: 0 1.5em 1em;
+        font-size: 1.2em;
+        border: none;
+        margin: 1em 0;
+        background-color: #1653f9;
+        box-shadow: 2px 2px 15px black;
+        border-radius: 10px;
+      }
+      .contact-time > h3{
+       line-height: 1.5;
+       padding: .75em 0 0;
+      }
+      h3 {
+        font-size: 1.5em;
+      }
+      h1,
+      h2,
+      h3 {
+        word-spacing: 2px;
+      }
+      .check-me-out {
+        position: relative;
+      }
+      label {
+        font-size: 1.2em;
+      }
+      input[type="text"],
+      input[type="email"] {
         font-size: 1em;
+        padding: 0.3em;
+      }
+      input[type="date"] {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 0.9em;
+        padding: 0.3em;
+      }
+      input[type="email"]:invalid {
+        border: 2px solid red;
+      }
+      input[type="email"]:valid {
+        border: 2px solid rgb(0, 255, 21);
+      }
+      input[type="radio"] {
+        appearance: none;
+        background: white;
+        border: 2px solid #fff;
+        outline: 2px solid #000;
+        border-radius: 50%;
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0 5px;
+      }
+      select {
+        font-size: 1.2em;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border: 2px solid white;
+        padding: 5px;
+      }
+
+      button {
+        background-color: rgb(0, 0, 0);
+        border: 3px solid #36f015;
+        padding: 0.4em 1.5em;
+        font-size: 1.5em;
+        margin: 1.5em 0 0 0;
+        border-radius: 50px 0px;
+        color: #fff;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        transition: 0.1s ease-in;
+      }
+      button:hover {
+        outline-offset: 2px;
+        transform: scale(1.05);
+      }
+      button:active {
+        transform: scale(0.9);
+      }
+      input[type="radio"]:checked {
+        background: #000000;
+      }
+      input[type="checkbox"] {
+        appearance: none;
+        background: white;
+        border: 1px solid #fff;
+        outline: 2px solid #000;
+        height: 1.2em;
+        width: 1.2em;
+        margin: 0 5px;
+      }
+      input[type="checkbox"]:checked {
+        background: #000000;
+      }
+      input[type="checkbox"]:checked::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 25%;
+        left: 30%;
+        border: 1px solid #36f015;
+        border-width: 0px 2px 2px 0;
+        transform: rotateZ(45deg);
+        width: 30%;
+        height: 60%;
       }
     </style>
   </head>
@@ -33,73 +149,133 @@
       <div class="header-logo">
         <a href="./index.html">
           <img class="logo" src="./Img/Logo.png" alt="" />
-          <h1>Home Pro</h1>
+          <h2 class="header-title">Home Pro</h2>
         </a>
       </div>
+      <div class="nav-button">
+        <i class="fa-solid fa-bars fa-bar-color"></i>
+      </div>
       <nav>
-        <div class="my-Line-container1">
-          <a class="my-Line1" href="./contact.html"
+        <div class="nav-items">
+          <a class="green-under-line-1" href="./contact.html"
             >Contact Us <span> &#x25BC;</span>
           </a>
         </div>
-        <div class="my-Line-container2">
-          <a class="my-Line2" href="./price.html"
+        <div class="nav-items">
+          <a class="green-under-line-2" href="./price.html"
             >Products <span> &#x25BC;</span></a
           >
         </div>
-        <div class="my-Line-container3">
-          <a class="my-Line3" href="./price.html"
+        <div class="nav-items">
+          <a class="green-under-line-3" href="./price.html"
             >About <span> &#x25BC;</span></a
           >
         </div>
-        <div class="my-Line-container4">
-          <a class="my-Line4" href="./price.html"
+        <div class="nav-items">
+          <a class="green-under-line-4" href="./price.html"
             >Careers <span> &#x25BC;</span></a
           >
         </div>
       </nav>
     </header>
     <main class="main-form">
-      <form class="form" action="#">
-        <h2>Contact Us</h2>
-        <div>
-          <label for=""><input type="text" placeholder="First Name" /> </label>
-        </div>
-        <div>
-          <input type="text" placeholder="Last Name" />
-        </div>
-
-        <h3>Contact Time</h3>
-        <p>
-          AM <input type="radio" name="Time" /> PM
-          <input type="radio" name="Time" />
-        </p>
-        <h3>Select Service</h3>
-        <select name="" id="mySelection">
-          <!-- display selected for indoor outdoor services -->
-          <option value="">Select</option>
-          <option value="Indoor">Indoor</option>
-          <option value="Outdoor">Outdoor</option>
-          <option value="InAndOut">Indoor and Outdoor</option>
-        </select>
-        <div class="mySlectionsss">
-          <div class="Outdoor">
-            <h4>Outdoor</h4>
-            <p><input type="checkbox" />Pressure Washing</p>
-            <p><input type="checkbox" />Moss Removal</p>
-            <p><input type="checkbox" />Gutters</p>
-            <p><input type="checkbox" />Window Cleaning</p>
+      <form class="form txt-shadow" action="#">
+        <h1 class="contact-us">Contact Us</h1>
+        <fieldset class="personal-info">
+          <h3>Personal Information</h3>
+          <div>
+            <label for="first-name"> </label>
+            <input type="text" name="first-name" placeholder="First Name" />
           </div>
-          <div class="Indoor">
-            <h4>Indoor</h4>
-            <p><input type="checkbox" />General Clean</p>
-            <p><input type="checkbox" />After Party</p>
-            <p><input type="checkbox" />Move out</p>
-            <p>
-              <input type="checkbox" />Deep Clean (Windows, Fridge, Oven etc...)
-            </p>
+          <div>
+            <label for="last-name"> </label>
+            <input type="text" name="last-name" placeholder="Last Name" />
           </div>
-        </div>
+          <div>
+            <label for="last-name"> </label>
+            <input
+              type="email"
+              name="last-name"
+              placeholder="you@email.com"
+              required
+            />
+          </div>
+        </fieldset>
+        <fieldset class="contact-time">
+          <h3>Contact Time</h3>
+          <div>
+            <label for="AM">AM</label>
+            <input type="radio" name="time" checked />
+            <label for="PM"> PM</label>
+            <input type="radio" name="time" />
+          </div>
+          <div>
+            <label for="date"> </label>
+            <input type="date" name="date" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <h3>Select Service</h3>
+          <select name="" id="service-select">
+            <!-- display selected for indoor outdoor services -->
+            <option value="">Select</option>
+            <option value="indoor">Indoor</option>
+            <option value="outdoor">Outdoor</option>
+            <option value="InAndOut">Indoor and Outdoor</option>
+          </select>
+          <div class="service-selections">
+            <div class="outdoor">
+              <h4>Outdoor</h4>
+              <p>
+                <input class="check-me-out" type="checkbox" />
+                <label for="Pressure Washing">Pressure Washing</label>
+              </p>
+              <p>
+                <input class="check-me-out" type="checkbox" /><label
+                  for="Moss Removal"
+                  >Moss Removal</label
+                >
+              </p>
+              <p>
+                <input class="check-me-out" type="checkbox" /><label
+                  for="Gutters"
+                  >Gutters</label
+                >
+              </p>
+              <p>
+                <input class="check-me-out" type="checkbox" /><label
+                  for="Window Cleaning"
+                  >Window Cleaning</label
+                >
+              </p>
+            </div>
+            <div class="indoor">
+              <h4>Indoor</h4>
+              <p>
+                <input class="check-me-out" type="checkbox" />
+                <label for="General Clean">General Clean </label>
+              </p>
+              <p>
+                <input class="check-me-out" type="checkbox" /><label
+                  for="After Party"
+                  >After Party
+                </label>
+              </p>
+              <p>
+                <input class="check-me-out" type="checkbox" /><label
+                  for="Move out"
+                  >Move out</label
+                >
+              </p>
+              <p>
+                <input class="check-me-out" type="checkbox" /><label
+                  for="Move out"
+                  >Deep Clean (Windows, Fridge, Oven etc...)</label
+                >
+              </p>
+            </div>
+          </div>
+        </fieldset>
         <button type="submit">Submit</button>
       </form>
     </main>
