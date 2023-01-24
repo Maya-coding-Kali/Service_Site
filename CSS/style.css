@@ -117,10 +117,10 @@ header {
 .nav-button {
   display: block;
 }
-.x:hover {
+.fa-bar-color:hover {
   color: #3ef61d;
 }
-.x:active {
+.fa-bar-color:active {
   color: #31cc16;
 }
 .nav-items {
