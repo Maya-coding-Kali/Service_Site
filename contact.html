@@ -6,37 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./Img/Logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./CSS/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a96df777ae.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
     <style>
       body {
         background-color: rgb(131, 131, 131);
       }
       .contact-us {
-        font-size: 3.5em;
-        margin: 1em 1em 2em;
-        border-radius: 10%;
-        color: #36f015;
-        background-color: rgb(34, 34, 34);
-        text-shadow: 1px 1px 0px #0036ca,4.5px 4.5px 0px #000,5px 5px 0px #fff,6px 6px 0px #000,8px 8px 5px #000;
+        font-size: 4em;
+        margin: 4rem 4rem 6.3rem;
+        border-radius: 2%;
+        color: rgb(54, 240, 21);
+        /* background-color: rgb(17, 17, 17); */
+        text-shadow: 1px 1px 1px rgb(0, 0, 0), 2px 2px 0px rgb(255, 255, 255),
+          3px 3px 1px rgb(0, 0, 0);
+        background: linear-gradient(
+            0deg,
+            rgb(11, 11, 11) 0%,
+            rgba(0, 0, 0, 0) 30%
+          ),
+          linear-gradient(180deg, rgb(11, 11, 11) 0%, rgb(0, 0, 0, 0) 30%),
+          linear-gradient(90deg, rgb(11, 11, 11) 0%, rgba(0, 0, 0, 0) 30%),
+          linear-gradient(270deg, rgb(11, 11, 11) 0%, rgb(0, 54, 202) 30%);
+        box-shadow: 0px 0px 0px 1px rgb(0, 0, 0), 0px 0px 0px 2px rgb(0, 255, 0),
+          0px 0px 0px 3px rgb(0, 0, 0), 0px 0px 0px 5px rgb(0, 255, 0),
+          0px 0px 0px 8px rgb(0, 0, 0), 0px 0px 0px 13px rgb(0, 255, 0),
+          0px 0px 0px 21px rgb(0, 0, 0), 0px 0px 0px 34px rgb(0, 255, 0),
+          0px 0px 0px 55px rgb(0, 0, 0);
+        padding: 1rem;
+        animation: contact-animation 1s ease-in 0s 1;
+      }
+      @keyframes contact-animation {
+        0% {
+          box-shadow: none;
+          opacity: 0;
+        }
+        5% {
+          box-shadow: none;
+        }
+        50% {
+          opacity: 1;
+        }
 
-        padding: 1em;
-        box-shadow: 1px 1px rgb(0, 0, 0), -1px -1px rgb(0, 0, 0),
-          -1px 1px rgb(0, 0, 0), 1px -1px rgb(0, 0, 0), 2px 2px rgb(0, 255, 0),
-          -2px -2px rgb(0, 255, 0), -2px 2px rgb(0, 255, 0),
-          2px -2px rgb(0, 255, 0), 3px 3px rgb(0, 0, 0), -3px -3px rgb(0, 0, 0),
-          -3px 3px rgb(0, 0, 0), 3px -3px rgb(0, 0, 0), 5px 5px rgb(0, 255, 0),
-          -5px -5px rgb(0, 255, 0), -5px 5px rgb(0, 255, 0),
-          5px -5px rgb(0, 255, 0), 8px 8px rgb(0, 0, 0), -8px -8px rgb(0, 0, 0),
-          -8px 8px rgb(0, 0, 0), 8px -8px rgb(0, 0, 0), 13px 13px rgb(0, 255, 0),
-          -13px -13px rgb(0, 255, 0), -13px 13px rgb(0, 255, 0),
-          13px -13px rgb(0, 255, 0), 21px 21px rgb(0, 0, 0),
-          -21px -21px rgb(0, 0, 0), -21px 21px rgb(0, 0, 0),
-          21px -21px rgb(0, 0, 0), 34px 34px rgb(0, 255, 0),
-          -34px -34px rgb(0, 255, 0), -34px 34px rgb(0, 255, 0),
-          34px -34px rgb(0, 255, 0), 55px 55px rgb(0, 0, 0),
-          -55px -55px rgb(0, 0, 0), -55px 55px rgb(0, 0, 0),
-          55px -55px rgb(0, 0, 0), -55px 0px rgb(0, 0, 0),
-          55px -0px rgb(0, 0, 0);
+        100% {
+          box-shadow: 0px 0px 0px 1px rgb(0, 0, 0),
+            0px 0px 0px 2px rgb(0, 255, 0), 0px 0px 0px 3px rgb(0, 0, 0),
+            0px 0px 0px 5px rgb(0, 255, 0), 0px 0px 0px 8px rgb(0, 0, 0),
+            0px 0px 0px 13px rgb(0, 255, 0), 0px 0px 0px 21px rgb(0, 0, 0),
+            0px 0px 0px 34px rgb(0, 255, 0), 0px 0px 0px 55px rgb(0, 0, 0);
+        }
+      }
+      @keyframes form-animation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
       }
       .service-selections {
         text-align: left;
@@ -45,7 +74,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 5em;
+        padding: 5rem;
       }
       form {
         background-color: #0036ca;
@@ -53,21 +82,22 @@
         color: rgb(255, 255, 255);
         text-align: center;
         line-height: 2.5;
-        padding: 2em 4em;
+        padding: 2rem 3.5rem;
         box-shadow: 5px 5px 10px rgb(38, 38, 38), -5px 0px 10px rgb(38, 38, 38);
+        animation: form-animation 0.5s ease-in 0s 1;
       }
       fieldset {
-        padding: 0 1.5em 1em;
+        padding: 0 1.5rem 1rem;
         font-size: 1.2em;
         border: none;
-        margin: 1em 0;
+        margin: 3rem 0.655rem 0;
         background-color: #1653f9;
         box-shadow: 2px 2px 15px black;
         border-radius: 10px;
       }
       .contact-time > h3 {
         line-height: 1.5;
-        padding: 0.75em 0 0;
+        padding: 0.75rem 0 0;
       }
       h3 {
         font-size: 1.5em;
@@ -93,6 +123,10 @@
           sans-serif;
         font-size: 0.9em;
         padding: 0.3em;
+      }
+      input {
+        border: 3px solid #000;
+        border-radius: 5px;
       }
       input[type="email"]:invalid {
         border: 2px solid red;
@@ -143,10 +177,10 @@
       input[type="checkbox"] {
         appearance: none;
         background: white;
-        border: 1px solid #fff;
+        border: 2px solid #fff;
         outline: 2px solid #000;
-        height: 1.2em;
-        width: 1.2em;
+        height: 20px;
+        width: 20px;
         margin: 0 5px;
       }
       input[type="checkbox"]:checked {
@@ -168,17 +202,19 @@
   </head>
 
   <body>
-    <header>
+    <header class="flex">
       <div class="header-logo">
-        <a href="./index.html">
+        <a class="flex" href="./index.html">
           <img class="logo" src="./Img/Logo.png" alt="" />
-          <h2 class="header-title">Home Pro</h2>
+          <h1 class="header-title">Home Pro</h1>
         </a>
       </div>
       <div class="nav-button">
         <i class="fa-solid fa-bars fa-bar-color"></i>
       </div>
-      <nav>
+    </header>
+    <nav class="header-nav">
+      <div class="header-nav-style flex f-column">
         <div class="nav-items">
           <a class="green-under-line-1" href="./contact.html"
             >Contact Us <span> &#x25BC;</span>
@@ -199,8 +235,8 @@
             >Careers <span> &#x25BC;</span></a
           >
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <main class="main-form">
       <form class="form txt-shadow" action="#">
         <h1 class="contact-us">Contact Us</h1>
@@ -242,9 +278,9 @@
           <select name="" id="service-select">
             <!-- display selected for indoor outdoor services -->
             <option value="">Select</option>
+            <option value="InAndOut">Indoor and Outdoor</option>
             <option value="indoor">Indoor</option>
             <option value="outdoor">Outdoor</option>
-            <option value="InAndOut">Indoor and Outdoor</option>
           </select>
           <div class="service-selections">
             <div class="outdoor">
@@ -303,5 +339,6 @@
       </form>
     </main>
   </body>
-  <script src="./script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/contact.js"></script>
 </html>

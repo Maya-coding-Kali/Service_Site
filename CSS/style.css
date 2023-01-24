@@ -3,25 +3,46 @@
 #36f015 // green
 #f85b17 // orange
 */
-
+/* general */
 * {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 a {
   text-decoration: none;
   color: black;
 }
-
+.flex {
+  display: flex;
+}
+.f-column{
+  flex-direction: column;
+}
+.justify-center{
+  justify-content: center;
+}
+.pdd-s{
+  padding: 1em;
+}
+.pdd-l{
+  padding: 2em;
+}
+.pdd-m {
+  padding: 2em;
+}
+.mrg-tb-m {
+  margin: 3rem;
+}
+.mrg-lr-l {
+  margin: 0 6rem;
+}
+/* Main Items */
 header {
   background-color: #0036ca;
-  display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 5% 1em 10%;
@@ -31,12 +52,10 @@ header {
   word-spacing: 0;
 }
 .header-logo > a {
-  display: flex;
   position: relative;
   align-items: center;
   color: rgb(255, 255, 255);
 }
-
 .header-title {
   text-align: center;
   font-size: 2em;
@@ -46,49 +65,49 @@ header {
 .txt-shadow {
   text-shadow: 1px 1px #000;
 }
-.header-title::after,
-.green-under-line-1:hover::after,
-.green-under-line-2:hover::after,
-.green-under-line-3:hover::after,
-.green-under-line-4:hover::after {
+.header-title::after {
   display: block;
   content: "";
   background: #36f015;
   border: 1px solid #90fa7d;
-  box-shadow: 3px 2px 5px black;
+  box-shadow: 0px 0px 2px black;
   outline-offset: 1px;
   border-radius: 1px;
   position: absolute;
   bottom: 2px;
-  left: 5.5%;
+  left: 5%;
   width: 11%;
 }
-
 .green-under-line-1:hover::after,
 .green-under-line-2:hover::after,
 .green-under-line-3:hover::after,
 .green-under-line-4:hover::after {
-  bottom: -5px;
-  left: 24%;
-  width: 35%;
+  content: "";
+  box-sizing: content-box;
+  display: block;
   background: #36f015;
-  border: 1px solid #36f015;
+  border: 1px solid #90fa7d;
+  box-shadow: 0px 0px 2px black;
+  outline-offset: 1px;
+  border-radius: 1px;
+  position: relative;
+  top: 10%;
+  left: 30%;
+  width: 30%;
+  background: #36f015;
+  border: 1px solid #36f015;  
 }
+
 .green-under-line-1:active::after,
 .green-under-line-2:active::after,
 .green-under-line-3:active::after,
 .green-under-line-4:active::after {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
 }
-
 .logo {
   width: 35px;
   cursor: pointer;
   margin: 0.5em 0.5em 0.5em 0.5em;
-}
-
-nav {
-  display: flex;
 }
 .fa-bar-color {
   color: white;
@@ -96,7 +115,7 @@ nav {
   font-size: 2.5em;
 }
 .nav-button {
-  display: none;
+  display: block;
 }
 .fa-bar-color:hover {
   color: #3ef61d;
@@ -104,56 +123,67 @@ nav {
 .fa-bar-color:active {
   color: #31cc16;
 }
+.nav-items {
+  margin: 10px 5px;  
+  padding-top: 10px;
+  font-size: 2em;  
+  width: 300px;
+  height: 50px;
+}
 .nav-items > a,
 .nav-items > span {
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   text-shadow: 1px 1px 1px rgb(110, 110, 110), 1px 2px 1px rgb(0, 0, 0);
   margin: 0 2px;
-  padding: 5px;
+
   font-size: 1.105em;
 }
-
-.nav-items {
-  position: relative;
-  margin: 0 5px;
-  padding-top: 10px;
+span {
+  font-size: 0.5em;
+  margin: 10px 10px 3px;
 }
-
+.header-nav {
+  position: fixed;
+  height: 100vh;
+  width: 100%;  
+  display: none;
+  background-color: rgb(0, 0, 0, 0.9);
+}
+.header-nav-style {  
+  border-radius: 0 0 20px 20px;
+  padding: 10% 0 0 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
 .nav-items > a:hover {
   color: #3ef61d;
   text-shadow: 2px 2px 3px black;
 }
-
 .nav-items:active {
   color: #3ef61d;
   transform: translateY(3px);
 }
-
 nav > a > span {
   font-size: 0.9em;
 }
-
 div:has(.logo),
 nav {
   text-align: center;
 }
-
 .main-image {
   background-image: url("../Img/water-1761027.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
 }
-
 .overlay {
   background: rgba(25, 25, 27, 0.5);
   height: 100%;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
 }
-
 .overlay > div > h2 {
   color: white;
   font-size: 6em;
@@ -161,7 +191,6 @@ nav {
     -10px 10px 10px black;
 }
 .overlay > div {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10%;
@@ -169,6 +198,7 @@ nav {
 }
 .text-animation {
   animation: text-animation ease-in-out 1.5s 0.25s;
+  animation: name duration timing-function delay iteration-count direction fill-mode;
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
 }
@@ -350,12 +380,6 @@ figure > .overlay > a.button:active {
   outline-offset: 2px;
   transform: scale(0.9);
 }
-
-.services {
-  display: flex;
-  justify-content: center;
-}
-
 #service > h3 {
   text-align: center;
   padding-top: 2em;
@@ -380,10 +404,7 @@ figure > .overlay > a.button:active {
 #service {
   padding: 0em 4em 4em;
 }
-
 .services {
-  display: flex;
-  flex-direction: column;
   background: rgb(234, 234, 234);
   line-height: 1.8;
   padding: 5em;
@@ -391,11 +412,9 @@ figure > .overlay > a.button:active {
   text-align: center;
   font-size: 1.2em;
 }
-
 .media {
   padding: 2em;
   font-size: 2em;
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -424,7 +443,6 @@ footer > p {
 
 footer > nav {
   padding: 2em;
-  display: flex;
   align-items: center;
   justify-content: space-around;
   line-height: 1.8;
@@ -510,12 +528,9 @@ footer > nav > div {
     flex-wrap: wrap;
     height: auto;
   }
-  nav {
-    display: block;
-  }
+
   .nav-items {
-    flex-direction: column;
-    display: none;
+    display: flex;
   }
   footer > nav {
     flex-direction: column;

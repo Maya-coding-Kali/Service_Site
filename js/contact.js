@@ -1,6 +1,11 @@
 let selectIndoorOutdoor = document.querySelector("#service-select");
 let mySelection;
-const slideShow = document.querySelector("#slideShow")
+
+// const barMenuIcon = document.querySelector(".fa-bar-color");
+// const navMenuItems = document.querySelector("nav");
+// const overlay = document.querySelector(".overlay");
+
+// const slideShow = document.querySelector("#slideShow");
 selectIndoorOutdoor.addEventListener("change", (event) => {
   document.querySelector(".outdoor").style.display = "none";
   document.querySelector(".indoor ").style.display = "none";
@@ -15,41 +20,3 @@ selectIndoorOutdoor.addEventListener("change", (event) => {
     alert("Please Input a selection");
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-  myName: "thing"
- }
-
-
-
-
-

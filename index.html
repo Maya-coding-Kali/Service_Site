@@ -14,9 +14,9 @@
   </head>
 
   <body>
-    <header>
+    <header class="flex">
       <div class="header-logo">
-        <a href="./index.html">
+        <a class="flex" href="./index.html">
           <img class="logo" src="./Img/Logo.png" alt="" />
           <h1 class="header-title">Home Pro</h1>
         </a>
@@ -24,14 +24,16 @@
       <div class="nav-button">
         <i class="fa-solid fa-bars fa-bar-color"></i>
       </div>
-      <nav>
+    </header>
+    <nav class="header-nav">
+      <div class="header-nav-style flex f-column ">
         <div class="nav-items">
           <a class="green-under-line-1" href="./contact.html"
             >Contact Us <span> &#x25BC;</span>
           </a>
         </div>
         <div class="nav-items">
-          <a class="green-under-line-2" href="./price.html"
+          <a class="green-under-line-2 " href="./price.html"
             >Products <span> &#x25BC;</span></a
           >
         </div>
@@ -45,13 +47,13 @@
             >Careers <span> &#x25BC;</span></a
           >
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
     <main>
       <section>
         <div class="main-image">
-          <div class="overlay">
-            <div>
+          <div class="overlay flex">
+            <div class="flex">
               <h2 class="text-animation">
                 Take A Break,<br />
                 A Clean Break
@@ -83,62 +85,56 @@
         <h3 id="products">Our Products</h3>
         <section class="product-items">
           <figure class="product-1">
-            <div class="overlay">
+            <div class="overlay flex">
               <a class="button" href="#">Shop Now!</a>
             </div>
           </figure>
           <figure class="product-2">
-            <div class="overlay">
+            <div class="overlay flex">
               <a class="button" href="#">Shop Now!</a>
             </div>
           </figure>
           <figure class="product-3">
-            <div class="overlay">
+            <div class="overlay flex">
               <a class="button" href="#">Shop Now!</a>
             </div>
           </figure>
         </section>
       </section>
-      <article id="service">
-        <article id="service">
-          <h3>What Our Clients Say:</h3>
-          <section class="services">
-            <div class="slideShow">
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero ipsam aliquam, quam excepturi laboriosam reiciendis
-                  tempore laudantium perspiciatis, laborum commodi, quisquam
-                  minus ullam? Dicta facere temporibus voluptatum quis quibusdam
-                  tempora.
-                </p>
-                <h4>-Steve From Vancouver</h4>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero ipsam aliquam, quam excepturi laboriosam reiciendis
-                  tempore laudantium perspiciatis, laborum commodi, quisquam
-                  minus ullam? Dicta facere temporibus voluptatum quis quibusdam
-                  tempora.
-                </p>
-                <h4>-Tom From Toronto</h4>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Libero ipsam aliquam, quam excepturi laboriosam reiciendis
-                  tempore laudantium perspiciatis, laborum commodi, quisquam
-                  minus ullam? Dicta facere temporibus voluptatum quis quibusdam
-                  tempora.
-                </p>
-                <h4>-Jen From Winnipeg</h4>
-              </div>
+      <article class="mrg-tb-m mrg-lr-l" id="service">
+        <h3>What Our Clients Say:</h3>
+        <section class="services">
+          <div class="slideShow">
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                ipsam aliquam, quam excepturi laboriosam reiciendis tempore
+                laudantium perspiciatis, laborum commodi, quisquam minus ullam?
+                Dicta facere temporibus voluptatum quis quibusdam tempora.
+              </p>
+              <h4>-Steve From Vancouver</h4>
             </div>
-          </section>
-        </article>
-
-        <section class="media">
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                ipsam aliquam, quam excepturi laboriosam reiciendis tempore
+                laudantium perspiciatis, laborum commodi, quisquam minus ullam?
+                Dicta facere temporibus voluptatum quis quibusdam tempora.
+              </p>
+              <h4>-Tom From Toronto</h4>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero
+                ipsam aliquam, quam excepturi laboriosam reiciendis tempore
+                laudantium perspiciatis, laborum commodi, quisquam minus ullam?
+                Dicta facere temporibus voluptatum quis quibusdam tempora.
+              </p>
+              <h4>-Jen From Winnipeg</h4>
+            </div>
+          </div>
+        </section>
+        <section class="media flex">
           <h3>Get To Know Home Pro:</h3>
           <video class="video-size" controls>
             <source src="video/Aurora.mp4" type="" />
@@ -147,7 +143,7 @@
       </article>
     </main>
     <footer>
-      <nav>
+      <nav class="flex">
         <div class="foot-contact">
           <h5>Contact:</h5>
           <p><a href="tel:555-555-5555">Phone</a></p>
@@ -172,52 +168,7 @@
       </nav>
       <p>Copyright Pseudonym &#169;</p>
     </footer>
-    <script defer>
-      console.log(pageYOffset);
-      const slideShow = document.querySelectorAll(".slideShow > div");
-      const ShowLow = document.querySelector(".product-items");
-      const navDisplay = document.querySelector(".fa-bar-color");
-      let i = 0;
-      let opacityFade = 1;
-      let fadeInOut = true;
-      let happened = false;
-      console.log(window.innerWidth);
-      const ShowHideMenu = (event) => {
-        document.querySelectorAll(".nav-items").forEach((element) => {
-          // if (event.type === "scroll" && window.innerWidth < 760) {
-          //   element.style.display = "none";
-          //   return;
-          // }
-          // if (event.type === "click" && element.style.display !== "flex") {
-          //   element.style.display = "flex";
-          // }
-          // if (event.type === "click" && element.style.display === "flex") {
-          //   element.style.display = "none";
-          // }
-        });
-      };
-      document.addEventListener("scroll", ShowHideMenu);
-      let myClick = navDisplay.addEventListener("click", ShowHideMenu);
-      console.log();
-      document.addEventListener("scroll", (event) => {
-        if (window.scrollY > 750) {
-          ShowLow.style.display = "flex";
-          happened = true;
-        }
-      });
-
-      setInterval(() => {
-        if (opacityFade >= 1.4) {
-          slideShow[i].style.display = "none";
-          opacityFade = 0;
-          if (i === 2) {
-            i = -1;
-          }
-          fadeInOut = !fadeInOut;
-          slideShow[++i].style.display = "block";
-        }
-        slideShow[i].style.opacity = `${(opacityFade += 0.009)}`;
-      }, 35);
-    </script>
+    <script src="./js/script.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
