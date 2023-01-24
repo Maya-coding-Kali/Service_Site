@@ -20,7 +20,7 @@
 
 
 const overlay = document.querySelector(".overlay");
-const barMenuIcon = document.querySelector(".fa-bar-color");
+const barMenuIcon = document.querySelector(".x");
 const navMenuItems = document.querySelector("nav");
 
 const ShowHideMenu = (event) => {
