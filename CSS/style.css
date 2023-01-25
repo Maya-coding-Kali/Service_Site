@@ -763,16 +763,15 @@ input[type="checkbox"]:checked::after {
     text-align: center;
     font-size: 1.2em;
   }
-  #service{
+  #service {
     padding: 1rem;
     margin: 2rem;
-  }  
+  }
   .slideShow {
     padding: 0rem;
   }
   .services {
     padding: 3em;
-   
   }
   .video-size {
     width: 100%;
